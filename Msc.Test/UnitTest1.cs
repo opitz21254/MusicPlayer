@@ -43,7 +43,6 @@ public class MediaTests
     public void TestFileSize()
     {
         // Arrange
-        // = 
         byte[] byteArrUnderTest = _fileHeader[4..8].ToArray();
         
         // Act
@@ -52,5 +51,31 @@ public class MediaTests
         // Assert
         result.ShouldBe("1.2 MB");
         
+    }
+    
+    [Test]
+    public void TestStringFileType2()
+    {
+        // ARRANGE
+        byte[] byteArrUnderTest =_fileHeader.Take(8..12).ToArray();
+        
+        // Act
+        string? result = _media?.ConvertFileTypeToString(byteArrUnderTest, false);
+        
+        // Assert
+        result.ShouldBe("WAVE");
+    }
+    
+    [Test]
+    public void TestStringFileType3()
+    {
+        // ARRANGE
+        byte[] byteArrUnderTest = _fileHeader.Take(12..16).ToArray();
+        
+        // Act
+        string? result = _media?.ConvertFileTypeToString(byteArrUnderTest, false);
+        
+        // Assert
+        result.ShouldBe("fmt ");
     }
 }

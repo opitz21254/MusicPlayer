@@ -34,3 +34,4 @@
 /Users/opitz/Code/Personal Projects/MusicPlayer/Msc.Console/obj/Debug/net9.0/Msc.Cons.E734BAFA.Up2Date
 /Users/opitz/Code/Personal Projects/MusicPlayer/Msc.Console/obj/Debug/net9.0/Msc.Console.genruntimeconfig.cache
 /Users/opitz/Code/Personal Projects/MusicPlayer/Msc.Console/obj/Debug/net9.0/ref/Msc.Console.dll
+/Users/opitz/Code/Personal Projects/MusicPlayer/Msc.Console/obj/Debug/net9.0/Msc.Console.sourcelink.json

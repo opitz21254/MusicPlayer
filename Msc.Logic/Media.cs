@@ -21,11 +21,12 @@ public class Media
 		}
 	}
 	
-	public uint ConvertFileSizeToUint(byte[] bytes, bool isLast)
+	public string ConvertFileSizeToUint(byte[] bytes, bool isLast)
 	{
+		string fileSizeSimple = "";
 		if (isLast)
 		{
-			return UInt32.MinValue;
+			return "No Value";
 		}
 		
 		string[] binaryStrings = bytes.Select(b => Convert.ToString(b, 2).PadLeft(8, '0')).ToArray();
@@ -34,6 +35,22 @@ public class Media
 		string combined = string.Join("", reversedBinaryStrings);
 		uint fileSize = Convert.ToUInt32(combined, 2);
 		
-		return fileSize;
+		switch (fileSize)
+		{
+			case var size when size >= 1_000_000_000:
+				fileSizeSimple = (size / 1_000_000_000.0).ToString("F1") + " GB";
+				break;
+			case var size when size >= 1_000_000:
+				fileSizeSimple = (size / 1_000_000.0).ToString("F1") + " MB";
+				break;
+			case var size when size >= 1_000:
+				fileSizeSimple = (size / 1_000.0).ToString("F1") + " KB";
+				break;
+			default:
+				fileSizeSimple = fileSize.ToString("F1") + " Bytes";
+				break;
+		}
+		
+		return fileSizeSimple;
 	}
 }

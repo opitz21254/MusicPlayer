@@ -47,10 +47,10 @@ public class MediaTests
         byte[] byteArrUnderTest = _fileHeader[4..8].ToArray();
         
         // Act
-        uint result = _media.ConvertFileSizeToUint(byteArrUnderTest, false);
+        string result = _media.ConvertFileSizeToUint(byteArrUnderTest, false);
         
         // Assert
-        result.ShouldBe(1210884u);
+        result.ShouldBe("1.2 MB");
         
     }
 }

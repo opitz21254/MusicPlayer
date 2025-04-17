@@ -21,7 +21,7 @@ public class Media
 		}
 	}
 	
-	public uint ConvertFileSizeToUint(byte[] bytes, bool useSimplifiedValue)
+	public uint ConvertFileSizeToUint(byte[] bytes, bool usePadding)
 	{
 		string[] binaryStrings = bytes.Select(b => Convert.ToString(b, 2).PadLeft(8, '0')).ToArray();
 		string[] reversedBinaryStrings = binaryStrings.Reverse().ToArray();
@@ -55,4 +55,17 @@ public class Media
 		return fileSizeSimple;
 	
 	}
+	
+	public string ConvertDataToIntsWithCommas(byte[] bytes, bool usePadding)
+	{
+		string combined = "";
+		string[] binaryStrings = bytes.Select(b => Convert.ToString(b, 2).PadLeft(8, '0')).ToArray();
+		string[] reversedBinaryStrings = binaryStrings.Reverse().ToArray();
+		
+		combined = string.Join(", ", reversedBinaryStrings);
+		
+		
+		return combined;
+	}
+	
 }

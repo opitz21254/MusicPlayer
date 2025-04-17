@@ -21,7 +21,7 @@ public class MediaTests
         using (FileStream fs = new FileStream("piano2.wav", FileMode.Open))
         using (BinaryReader reader = new BinaryReader(fs))
         {
-            _fileHeader = reader.ReadBytes(44);
+            _fileHeader = reader.ReadBytes(48);
         }
         
     }
@@ -81,7 +81,7 @@ public class MediaTests
     }
     
     [Test]
-    public void SizeOfFmtChunk()
+    public void Subchunk1SizeFmt()
     {
         // Arrange
         byte[] byteArrUnderTest = _fileHeader[16..20].ToArray();
@@ -91,5 +91,124 @@ public class MediaTests
         
         // Assert
         result.ShouldBe(16u);
+    }
+    
+    [Test]
+    public void CompressionType()
+    {
+        // Arrange
+        byte[] byteArrUnderTest = _fileHeader[20..22].ToArray();
+        
+        // Act
+        uint result = _media.ConvertFileSizeToUint(byteArrUnderTest, false);
+        
+        // Assert
+        result.ShouldBe(1u);
+    }
+    
+    [Test]
+    public void MonOrStereo()
+    {
+        // Arrange
+        byte[] byteArrUnderTest = _fileHeader[22..24].ToArray();
+        
+        // Act
+        uint result = _media.ConvertFileSizeToUint(byteArrUnderTest, false);
+        
+        // Assert
+        result.ShouldBe(2u);
+    }
+    
+    [Test]
+    public void SamplesPerSecond()
+    {
+        // Arrange
+        byte[] byteArrUnderTest = _fileHeader[24..28].ToArray();
+
+        // Act
+        uint result = _media.ConvertFileSizeToUint(byteArrUnderTest, false);
+        
+        // Assert
+        result.ShouldBe(48000u);
+    }
+    
+    [Test]
+    public void BytesPerSecond()
+    {
+        // Arrange
+        byte[] byteArrUnderTest = _fileHeader[28..32].ToArray();
+        
+        // Act
+        uint result = _media.ConvertFileSizeToUint(byteArrUnderTest, false);
+        
+        // Assert
+        result.ShouldBe(192000u);
+    }
+    
+    [Test]
+    public void BytesPerSampleFrame()
+    {
+        // Arrange
+        byte[] byteArrUnderTest = _fileHeader[32..34].ToArray();
+        
+        // Act
+        uint result = _media.ConvertFileSizeToUint(byteArrUnderTest, false);
+        
+        // Assert
+        result.ShouldBe(4u);
+    }
+    
+    [Test]
+    public void BitsPerSample()
+    {
+        // Arrange
+        byte[] byteArrUnderTest = _fileHeader[34..36].ToArray();
+        
+        // Act
+        uint result = _media.ConvertFileSizeToUint(byteArrUnderTest, false);
+        
+        // Assert
+        result.ShouldBe(16u);
+    }
+    
+    [Test]
+    public void TestDataChunkID()
+    {
+        // Arrange – bytes 36 to 39 should be "data"
+        byte[] byteArrUnderTest = _fileHeader[36..40].ToArray();
+        
+        // Act
+        string? result = _media?.ConvertFileTypeToString(byteArrUnderTest, false);
+        
+        // Assert
+        result.ShouldBe("data");
+    }
+    
+    
+    [Test]
+    public void Subchunk2Size()
+    {
+        // Arrange
+        byte[] byteArrUnderTest = _fileHeader[40..44].ToArray();
+        
+        // Act
+        uint result = _media.ConvertFileSizeToUint(byteArrUnderTest, false);
+        
+        // Assert
+        result.ShouldBe(1210848u);
+    }
+    
+    
+    [Test]
+    public void RealMusicData()
+    {
+        // Arrange
+        byte[] byteArrUnderTest = _fileHeader[44..48].ToArray();
+        
+        // Act
+        string result = _media.ConvertDataToIntsWithCommas(byteArrUnderTest, false);
+        
+        // Assert
+        result.ShouldBe("hi");
     }
 }

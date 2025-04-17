@@ -46,7 +46,8 @@ public class MediaTests
         byte[] byteArrUnderTest = _fileHeader[4..8].ToArray();
         
         // Act
-        string result = _media.ConvertFileSizeToUint(byteArrUnderTest, false);
+        uint num = _media.ConvertFileSizeToUint(byteArrUnderTest, false);
+        string result = _media.SimplifyFileSize(num);
         
         // Assert
         result.ShouldBe("1.2 MB");
@@ -77,5 +78,18 @@ public class MediaTests
         
         // Assert
         result.ShouldBe("fmt ");
+    }
+    
+    [Test]
+    public void SizeOfFmtChunk()
+    {
+        // Arrange
+        byte[] byteArrUnderTest = _fileHeader[16..20].ToArray();
+        
+        // Act
+        uint result = _media.ConvertFileSizeToUint(byteArrUnderTest, false);
+        
+        // Assert
+        result.ShouldBe(16u);
     }
 }

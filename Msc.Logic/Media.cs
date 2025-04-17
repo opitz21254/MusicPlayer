@@ -4,10 +4,10 @@ public class Media
 {
 	public Media() { }
 	
-	public string ConvertFileTypeToString(byte[] nums, bool isLast)
+	public string ConvertFileTypeToString(byte[] nums, bool includeCommas)
 	{
 		string stringType = "";
-		if (isLast == false)
+		if (includeCommas == false)
 		{
 			foreach(byte num in nums)
 			{
@@ -21,20 +21,21 @@ public class Media
 		}
 	}
 	
-	public string ConvertFileSizeToUint(byte[] bytes, bool isLast)
+	public uint ConvertFileSizeToUint(byte[] bytes, bool useSimplifiedValue)
 	{
-		string fileSizeSimple = "";
-		if (isLast)
-		{
-			return "No Value";
-		}
-		
 		string[] binaryStrings = bytes.Select(b => Convert.ToString(b, 2).PadLeft(8, '0')).ToArray();
 		string[] reversedBinaryStrings = binaryStrings.Reverse().ToArray();
 		
 		string combined = string.Join("", reversedBinaryStrings);
 		uint fileSize = Convert.ToUInt32(combined, 2);
 		
+		
+		return fileSize;
+	}
+	
+	public string SimplifyFileSize(uint fileSize)
+	{
+		string fileSizeSimple = "";
 		switch (fileSize)
 		{
 			case var size when size >= 1_000_000_000:
@@ -52,5 +53,6 @@ public class Media
 		}
 		
 		return fileSizeSimple;
+	
 	}
 }

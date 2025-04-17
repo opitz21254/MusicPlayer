@@ -148,3 +148,4 @@
 /Users/opitz/Code/Personal Projects/MusicPlayer/Msc.Test/bin/Debug/net9.0/System.CodeDom.dll
 /Users/opitz/Code/Personal Projects/MusicPlayer/Msc.Test/bin/Debug/net9.0/System.Management.dll
 /Users/opitz/Code/Personal Projects/MusicPlayer/Msc.Test/bin/Debug/net9.0/runtimes/win/lib/net6.0/System.Management.dll
+/Users/opitz/Code/Personal Projects/MusicPlayer/Msc.Test/obj/Debug/net9.0/Msc.Test.sourcelink.json

@@ -20,3 +20,4 @@
 /Users/opitz/Code/Personal Projects/MusicPlayer/Msc.Logic/obj/Debug/net9.0/refint/Msc.Logic.dll
 /Users/opitz/Code/Personal Projects/MusicPlayer/Msc.Logic/obj/Debug/net9.0/Msc.Logic.pdb
 /Users/opitz/Code/Personal Projects/MusicPlayer/Msc.Logic/obj/Debug/net9.0/ref/Msc.Logic.dll
+/Users/opitz/Code/Personal Projects/MusicPlayer/Msc.Logic/obj/Debug/net9.0/Msc.Logic.sourcelink.json

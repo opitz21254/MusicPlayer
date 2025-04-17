@@ -43,14 +43,14 @@ public class MediaTests
     public void TestFileSize()
     {
         // Arrange
-        // = _fileHeader[4..8].ToArray();
-        byte[] byteArrUnderTest = { 4, 122, 188, 0 };
+        // = 
+        byte[] byteArrUnderTest = _fileHeader[4..8].ToArray();
         
         // Act
-        string result = _media?.ConvertFileSizeToUint(byteArrUnderTest, false);
+        uint result = _media.ConvertFileSizeToUint(byteArrUnderTest, false);
         
         // Assert
-        result.ShouldBe("00000000, 10111100, 01111010, 00000100");
+        result.ShouldBe(1210884u);
         
     }
 }

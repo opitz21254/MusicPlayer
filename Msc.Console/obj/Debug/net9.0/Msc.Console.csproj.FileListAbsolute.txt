@@ -1,0 +1,36 @@
+/Users/opitz/Code/MusicPlayer/Msc.Console/bin/Debug/net9.0/Msc.Console
+/Users/opitz/Code/MusicPlayer/Msc.Console/bin/Debug/net9.0/Msc.Console.deps.json
+/Users/opitz/Code/MusicPlayer/Msc.Console/bin/Debug/net9.0/Msc.Console.runtimeconfig.json
+/Users/opitz/Code/MusicPlayer/Msc.Console/bin/Debug/net9.0/Msc.Console.dll
+/Users/opitz/Code/MusicPlayer/Msc.Console/bin/Debug/net9.0/Msc.Console.pdb
+/Users/opitz/Code/MusicPlayer/Msc.Console/bin/Debug/net9.0/Msc.Logic.dll
+/Users/opitz/Code/MusicPlayer/Msc.Console/bin/Debug/net9.0/Msc.Logic.pdb
+/Users/opitz/Code/MusicPlayer/Msc.Console/obj/Debug/net9.0/Msc.Console.csproj.AssemblyReference.cache
+/Users/opitz/Code/MusicPlayer/Msc.Console/obj/Debug/net9.0/Msc.Console.GeneratedMSBuildEditorConfig.editorconfig
+/Users/opitz/Code/MusicPlayer/Msc.Console/obj/Debug/net9.0/Msc.Console.AssemblyInfoInputs.cache
+/Users/opitz/Code/MusicPlayer/Msc.Console/obj/Debug/net9.0/Msc.Console.AssemblyInfo.cs
+/Users/opitz/Code/MusicPlayer/Msc.Console/obj/Debug/net9.0/Msc.Console.csproj.CoreCompileInputs.cache
+/Users/opitz/Code/MusicPlayer/Msc.Console/obj/Debug/net9.0/Msc.Cons.E734BAFA.Up2Date
+/Users/opitz/Code/MusicPlayer/Msc.Console/obj/Debug/net9.0/Msc.Console.dll
+/Users/opitz/Code/MusicPlayer/Msc.Console/obj/Debug/net9.0/refint/Msc.Console.dll
+/Users/opitz/Code/MusicPlayer/Msc.Console/obj/Debug/net9.0/Msc.Console.pdb
+/Users/opitz/Code/MusicPlayer/Msc.Console/obj/Debug/net9.0/Msc.Console.genruntimeconfig.cache
+/Users/opitz/Code/MusicPlayer/Msc.Console/obj/Debug/net9.0/ref/Msc.Console.dll
+/Users/opitz/Code/Personal Projects/MusicPlayer/Msc.Console/obj/Debug/net9.0/Msc.Console.csproj.AssemblyReference.cache
+/Users/opitz/Code/Personal Projects/MusicPlayer/Msc.Console/obj/Debug/net9.0/Msc.Console.GeneratedMSBuildEditorConfig.editorconfig
+/Users/opitz/Code/Personal Projects/MusicPlayer/Msc.Console/obj/Debug/net9.0/Msc.Console.AssemblyInfoInputs.cache
+/Users/opitz/Code/Personal Projects/MusicPlayer/Msc.Console/obj/Debug/net9.0/Msc.Console.AssemblyInfo.cs
+/Users/opitz/Code/Personal Projects/MusicPlayer/Msc.Console/obj/Debug/net9.0/Msc.Console.csproj.CoreCompileInputs.cache
+/Users/opitz/Code/Personal Projects/MusicPlayer/Msc.Console/obj/Debug/net9.0/Msc.Console.dll
+/Users/opitz/Code/Personal Projects/MusicPlayer/Msc.Console/obj/Debug/net9.0/refint/Msc.Console.dll
+/Users/opitz/Code/Personal Projects/MusicPlayer/Msc.Console/obj/Debug/net9.0/Msc.Console.pdb
+/Users/opitz/Code/Personal Projects/MusicPlayer/Msc.Console/bin/Debug/net9.0/Msc.Console
+/Users/opitz/Code/Personal Projects/MusicPlayer/Msc.Console/bin/Debug/net9.0/Msc.Console.deps.json
+/Users/opitz/Code/Personal Projects/MusicPlayer/Msc.Console/bin/Debug/net9.0/Msc.Console.runtimeconfig.json
+/Users/opitz/Code/Personal Projects/MusicPlayer/Msc.Console/bin/Debug/net9.0/Msc.Console.dll
+/Users/opitz/Code/Personal Projects/MusicPlayer/Msc.Console/bin/Debug/net9.0/Msc.Console.pdb
+/Users/opitz/Code/Personal Projects/MusicPlayer/Msc.Console/bin/Debug/net9.0/Msc.Logic.dll
+/Users/opitz/Code/Personal Projects/MusicPlayer/Msc.Console/bin/Debug/net9.0/Msc.Logic.pdb
+/Users/opitz/Code/Personal Projects/MusicPlayer/Msc.Console/obj/Debug/net9.0/Msc.Cons.E734BAFA.Up2Date
+/Users/opitz/Code/Personal Projects/MusicPlayer/Msc.Console/obj/Debug/net9.0/Msc.Console.genruntimeconfig.cache
+/Users/opitz/Code/Personal Projects/MusicPlayer/Msc.Console/obj/Debug/net9.0/ref/Msc.Console.dll

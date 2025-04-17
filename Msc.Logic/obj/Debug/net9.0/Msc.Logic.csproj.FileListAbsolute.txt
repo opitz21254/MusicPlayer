@@ -1,0 +1,22 @@
+/Users/opitz/Code/MusicPlayer/Msc.Logic/bin/Debug/net9.0/Msc.Logic.deps.json
+/Users/opitz/Code/MusicPlayer/Msc.Logic/bin/Debug/net9.0/Msc.Logic.dll
+/Users/opitz/Code/MusicPlayer/Msc.Logic/bin/Debug/net9.0/Msc.Logic.pdb
+/Users/opitz/Code/MusicPlayer/Msc.Logic/obj/Debug/net9.0/Msc.Logic.GeneratedMSBuildEditorConfig.editorconfig
+/Users/opitz/Code/MusicPlayer/Msc.Logic/obj/Debug/net9.0/Msc.Logic.AssemblyInfoInputs.cache
+/Users/opitz/Code/MusicPlayer/Msc.Logic/obj/Debug/net9.0/Msc.Logic.AssemblyInfo.cs
+/Users/opitz/Code/MusicPlayer/Msc.Logic/obj/Debug/net9.0/Msc.Logic.csproj.CoreCompileInputs.cache
+/Users/opitz/Code/MusicPlayer/Msc.Logic/obj/Debug/net9.0/Msc.Logic.dll
+/Users/opitz/Code/MusicPlayer/Msc.Logic/obj/Debug/net9.0/refint/Msc.Logic.dll
+/Users/opitz/Code/MusicPlayer/Msc.Logic/obj/Debug/net9.0/Msc.Logic.pdb
+/Users/opitz/Code/MusicPlayer/Msc.Logic/obj/Debug/net9.0/ref/Msc.Logic.dll
+/Users/opitz/Code/Personal Projects/MusicPlayer/Msc.Logic/bin/Debug/net9.0/Msc.Logic.deps.json
+/Users/opitz/Code/Personal Projects/MusicPlayer/Msc.Logic/bin/Debug/net9.0/Msc.Logic.dll
+/Users/opitz/Code/Personal Projects/MusicPlayer/Msc.Logic/bin/Debug/net9.0/Msc.Logic.pdb
+/Users/opitz/Code/Personal Projects/MusicPlayer/Msc.Logic/obj/Debug/net9.0/Msc.Logic.GeneratedMSBuildEditorConfig.editorconfig
+/Users/opitz/Code/Personal Projects/MusicPlayer/Msc.Logic/obj/Debug/net9.0/Msc.Logic.AssemblyInfoInputs.cache
+/Users/opitz/Code/Personal Projects/MusicPlayer/Msc.Logic/obj/Debug/net9.0/Msc.Logic.AssemblyInfo.cs
+/Users/opitz/Code/Personal Projects/MusicPlayer/Msc.Logic/obj/Debug/net9.0/Msc.Logic.csproj.CoreCompileInputs.cache
+/Users/opitz/Code/Personal Projects/MusicPlayer/Msc.Logic/obj/Debug/net9.0/Msc.Logic.dll
+/Users/opitz/Code/Personal Projects/MusicPlayer/Msc.Logic/obj/Debug/net9.0/refint/Msc.Logic.dll
+/Users/opitz/Code/Personal Projects/MusicPlayer/Msc.Logic/obj/Debug/net9.0/Msc.Logic.pdb
+/Users/opitz/Code/Personal Projects/MusicPlayer/Msc.Logic/obj/Debug/net9.0/ref/Msc.Logic.dll
